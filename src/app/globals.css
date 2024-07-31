@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+*{ 
+    /* border: 1px solid red; */
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,10 +28,47 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@layer components{
+  .active-image{
+    flex-grow: 10px;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .custom-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    justify-items: center;
+    gap: .5em;
+  }
+}
+
+.grid-overlay{
+  background: linear-gradient( rgba(255, 255, 255, 0.432) 10%, transparent 50%, rgba(255, 255, 255, 0.644)  );
+
+}
+/* CircleText.css */
+/* 
+.circle {
+  position: relative;
+  width: 2 * 60px;
+  height: 2 * 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+} */
+
+.circle-char {
+  /* position: absolute; */
+  transform-origin: 0;
+  white-space: nowrap;
+  text-orientation: sideways-right;
 }
