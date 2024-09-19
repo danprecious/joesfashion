@@ -49,7 +49,7 @@ const AboutPage = () => {
 
   return (
     <section className="flex lg:mx-16 md:mx-10 md:py-16">
-      <div className="md:w-[25%] min-h-[60vh]">
+      <div className="md:w-[25%] min-h-[60vh] hidden md:block">
         <div className="flex h-[50%]">
           <div className="w-[50%] border-t-4 border-r-4 "></div>
           <div className="w-[50%] border-t-4"></div>
@@ -60,7 +60,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="md:w-[75%] ">
-        <div className="ml-10">
+        <div className="md:ml-10 px-5">
           <div className="mb-20">
             <h1 className="text-[2em] my-3">About us</h1>
           <p>
@@ -80,19 +80,19 @@ const AboutPage = () => {
           </div>
           <div className="my-20">
           <h2 className="text-[2rem] my-3">Services we offer</h2>
-            <div className="flex w-full justify-between py-8">
+            <div className="custom-grid w-full justify-between py-8">
               {
-                services.map((service, index) => <div key={service.name} className="bg-stone-600 w-[12em] h-[13em] rounded-md"></div>)
+                services.map((service, index) => <div key={service.name} className="bg-stone-600 lg:w-[12em] w-full h-[13em] rounded-md mx-8"></div>)
               }
             </div>
           </div>
 
           <div className="my-20">
             <h2 className="text-[2em] my-5">Meet the work team</h2>
-            <div className="flex w-full justify-between py-8">
+            <div className="custom-grid w-full justify-between py-8">
               {
-                teamMembers.map((member, index) => <div key={member.name} className="">
-                  <div className="w-[7em] h-[7em] rounded-full bg-stone-600"></div>
+                teamMembers.map((member, index) => <div key={member.name} className="mb-8 mx-5">
+                  <div className="w-[15em] h-[15em] lg:w-[10em] lg:h-[10em] rounded-full bg-stone-600"></div>
                   <p className="text-center py-3">{member.name}</p>
                 </div>)
               }

@@ -34,7 +34,7 @@ const ContactSection = () => {
         </div>
       </div>
       <div className="lg:w-[40%] flex flex-col justify-center px-2 md:px-6 my-10 lg:my-0">
-        <form onSubmit={""} className='w-100 flex flex-col py-10 px-5 shadow-lg'>
+        <form  className='w-100 flex flex-col py-10 px-5 shadow-lg'>
             <input type="text" name='name' value={formData.name} placeholder='Your Name' onChange={handleInput} className='p-3 rounded-md my-3 text-sm border-[1px] border-amber-700 border-opacity-20'  />
             <textarea name='message' value={formData.message} placeholder='Type in your message here' onChange={handleInput} className='resize-none h-[5em] p-3 rounded-md my-3 text-sm border-[1px] border-amber-700 border-opacity-20' />
             <div className='flex justify-end'>
