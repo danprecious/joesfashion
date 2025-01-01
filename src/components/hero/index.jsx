@@ -1,5 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
+import images from '../../utils/images.json'
+import Image from "next/image";
 
 const heroFont = localFont({
   // recoleta-regulardemo.otf
@@ -23,19 +25,23 @@ const Hero = () => {
       <div className="md:mx-24 mx-3 my-2">
         <div className="md:min-h-[18em] flex flex-col justify-center md:flex-row  md:justify-between">
           <div className="lg:w-[20%] h-[] md:w-[33.5%] w-[100%] flex  items-center px-3">
-            <div className="h-[50%] w-[100%] min-h-[10em] bg-stone-600 rounded-lg"></div>
+            <div className="h-[50%] w-[100%] min-h-[10em] bg-stone-600 rounded-lg">
+            <Image alt="main hero image" width={1000} height={1000} src={images.hero1} className="image" />
+            </div>
           </div>
           <div className="md:w-[20%] hidden lg:flex flex-col justify-center px-3">
-            <div className="h-[30%] w-[100%] bg-stone-600 rounded-lg my-1"></div>
-            <div className="h-[40%] w-[100%] bg-stone-600 rounded-lg my-1"></div>
+            <div className="h-[30%] w-[100%] bg-stone-600 rounded-lg my-1"><Image alt="main hero image" width={1000} height={1000} src={images.hero2} className="image" /></div>
+            <div className="h-[40%] w-[100%] bg-stone-600 rounded-lg my-1"><Image alt="main hero image" width={1000} height={1000} src={images.hero3} className="image" /></div>
           </div>
-          <div className="lg:w-[20%] md:w-[33.5%] w-[100%] min-h-[20em] my-4 bg-amber-950 rounded-2xl"></div>
+          <div className="lg:w-[20%] md:w-[33.5%] w-[100%] min-h-[20em] my-4 bg-amber-950 rounded-2xl overflow-hidden transition-all duration-200 ">
+                <Image alt="main hero image" width={1000} height={1000} src={images.heroMain} className="image" />
+          </div>
           <div className="md:w-[20%] lg:flex flex-col justify-center px-3 hidden">
-            <div className="h-[40%] w-[100%] bg-stone-600 rounded-lg my-1"></div>
-            <div className="h-[30%] w-[100%] bg-stone-600 rounded-lg my-1"></div>
+            <div className="h-[40%] w-[100%] bg-stone-600 rounded-lg my-1"><Image alt="main hero image" width={1000} height={1000} src={images.hero4} className="image" /></div>
+            <div className="h-[30%] w-[100%] bg-stone-600 rounded-lg my-1"><Image alt="main hero image" width={1000} height={1000} src={images.hero5} className="image" /></div>
           </div>
           <div className="lg:w-[20%] md:w-[33.5%] w-[100%] flex  items-center px-3">
-            <div className="h-[50%] w-[100%] bg-stone-600 min-h-[10em] rounded-lg"></div>
+            <div className="h-[50%] w-[100%] bg-stone-600 min-h-[10em] rounded-lg"><Image alt="main hero image" width={1000} height={1000} src={images.hero6} className="image" /></div>
           </div>
         </div>
       </div>

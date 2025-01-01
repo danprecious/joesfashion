@@ -8,6 +8,7 @@ export const GlobalState = React.createContext();
 export const GlobalStateProvider = ({ children }) => {
   const defaultState = {
     toggleNav: false,
+    getAnAttireOpen: false,
   };
 
   const [state, dispatch] = useReducer(reducer, defaultState);

@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { GlobalStateProvider } from "@/stateManager/context";
+import GetAnAttire from "@/components/getAnAttire";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <GlobalStateProvider>
         <body className={inter.className}>
+          <GetAnAttire />
           <Header />
           {children}
           <Footer />

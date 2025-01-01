@@ -34,6 +34,9 @@ body {
   .active-image{
     flex-grow: 10px;
   }
+  .image {
+    @apply  object-cover w-full h-full;
+  }
 }
 
 @layer utilities {
