@@ -18,7 +18,7 @@ const SecondSection = () => {
   const [activeText, setActiveText] = useState("Celebrate culture with vibrant and stylish Ankara designs, blending tradition and modernity for every occasion");
 
   const catalogue = {
-    ankara: [
+    ankara: [ 
       "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754313/African_Suit_for_Men_Ankara_Print_Jacket_Coat_and_Pants_2_Pieces_Set_Dshiki_Men_s_Formal_Outfits_owiqpi.png",
       "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1734594463/Dresses_For_Women___Fashion_Dress_Online_d9ipvj.png",
       "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754493/African_Men_Clothing_Kaftan_African_Men_Shirt_and_Dashiki_Mens_Shirt_Casual_wear__oqeslr.png",

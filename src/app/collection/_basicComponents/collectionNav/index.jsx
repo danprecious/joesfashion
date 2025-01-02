@@ -9,7 +9,7 @@ const CollectionNav = () => {
 
   const collectionLinks = [
     { name: "Ankara Wears", href: "/collection/ankara" },
-    { name: "Corperate Wears", href: "/collection/cooperate" },
+    { name: "Corperate Wears", href: "/collection/corperate" },
     { name: "Senator Wears", href: "/collection/senators" },
   ];
 

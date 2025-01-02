@@ -31,7 +31,7 @@ const FifthSection = () => {
   };
 
   return (
-    <section className="flex justify-center relative mb-15">
+    <section className="lg:flex justify-center relative mb-15">
       {reviewsData.map(({ reviewMessage, name, image }, index) => {
         return (
           <div
@@ -41,7 +41,7 @@ const FifthSection = () => {
             } flex-col lg:w-[60%] `}
           >
             <p className="text-center py-5 text-[1.2rem]">"{reviewMessage}"</p>
-            <div className="flex justify-center py-10 items-center">
+            <div className="flex justify-center py-5 lg:py-10 items-center">
               <div className="w-[50px] h-[50px] rounded-full bg-stone-700 mx-2"></div>
               <div>
                 <p>{name}</p>
@@ -50,11 +50,11 @@ const FifthSection = () => {
           </div>
         );
       })}
-      <div className="">
-        <button onClick={handlePrev} className="absolute left-0 top-[50%]">
+      <div className="flex lg:block justify-center">
+        <button onClick={handlePrev} className="lg:absolute left-0 top-[50%] mx-3">
           <BiLeftArrowCircle className="text-[2rem]" />
         </button>
-        <button onClick={handlePrev} className="absolute right-0 top-[50%]">
+        <button onClick={handlePrev} className="lg:absolute right-0 top-[50%] mx-3">
           <FaArrowCircleRight className="text-[2rem]" />
         </button>
       </div>
