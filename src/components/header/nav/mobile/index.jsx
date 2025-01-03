@@ -6,11 +6,19 @@ import { useContext } from "react";
 import { BiMenu } from "react-icons/bi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import CustomButton from "@/components/utilities/button";
+import { FaBlenderPhone } from "react-icons/fa";
 
 export const MobileNav = () => {
   const path = usePathname();
   console.log(path);
-  const { state } = useContext(GlobalState);
+  const { state, dispatch } = useContext(GlobalState);
+
+  const getAnAttire = () => {
+    console.log(state?.getAnAttireOpen);
+
+    dispatch({ type: "OPEN_GET_AN_ATTIRE", payload: true });
+  };
 
   return (
     <div
@@ -36,6 +44,11 @@ export const MobileNav = () => {
             </Link>
           );
         })}
+        <div className="flex justify-end px-10">
+          <CustomButton fn={getAnAttire} text="Get an Attire">
+            <FaBlenderPhone />
+          </CustomButton>
+        </div>
       </div>
     </div>
   );

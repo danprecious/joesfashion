@@ -3,14 +3,10 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import usePagePath from "../_basicComponents/usePagePath";
 
 const AnkaraCollection = () => {
-  const pathName = usePathname();
-  const pathSplit = pathName.split("/");
-  const collectionPath = pathSplit[pathSplit.length - 1];
-
-  const title =
-    collectionPath.charAt(0).toLocaleUpperCase() + collectionPath.slice(1);
+ const title = usePagePath()
 
   const collectionData = [
     {
@@ -52,6 +48,8 @@ const AnkaraCollection = () => {
       ],
     },
   ];
+
+
 
   const [data, setData] = useState(() => {
     const collection = collectionData.find((item) => item.name === title.toLowerCase());
