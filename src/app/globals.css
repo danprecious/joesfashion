@@ -35,7 +35,7 @@ body {
     flex-grow: 10px;
   }
   .image {
-    @apply  object-cover w-full h-full;
+    @apply  object-cover w-full h-[100%];
   }
 }
 
