@@ -12,7 +12,7 @@ const CollectionImage = () => {
   const [image, setImage] = useState(() => {
     switch (title) {
       case "Ankara":
-        return " https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754313/African_Suit_for_Men_Ankara_Print_Jacket_Coat_and_Pants_2_Pieces_Set_Dshiki_Men_s_Formal_Outfits_owiqpi.png";
+        return "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754313/African_Suit_for_Men_Ankara_Print_Jacket_Coat_and_Pants_2_Pieces_Set_Dshiki_Men_s_Formal_Outfits_owiqpi.png";
       case "Senators":
         return "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754600/CONTACT_WHATSAPP__221_78_634_93_73_rqzynr.png";
       case "Corperate":
@@ -24,7 +24,7 @@ const CollectionImage = () => {
     setImage(() => {
       switch (title) {
         case "Ankara":
-          return " https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754313/African_Suit_for_Men_Ankara_Print_Jacket_Coat_and_Pants_2_Pieces_Set_Dshiki_Men_s_Formal_Outfits_owiqpi.png";
+          return "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754313/African_Suit_for_Men_Ankara_Print_Jacket_Coat_and_Pants_2_Pieces_Set_Dshiki_Men_s_Formal_Outfits_owiqpi.png";
         case "Senators":
           return "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754600/CONTACT_WHATSAPP__221_78_634_93_73_rqzynr.png";
         case "Corperate":
