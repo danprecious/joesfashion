@@ -119,7 +119,7 @@ const SecondSection = () => {
         })}
       </div>
       <div className="flex justify-center lg:justify-start">
-        <Link href="/collection/cooperate">
+        <Link href="/collection/corperate">
         <CustomButton text="See Collections">
           <FaArrowCircleRight />
         </CustomButton>

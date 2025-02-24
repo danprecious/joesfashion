@@ -12,7 +12,7 @@ const AnkaraCollection = () => {
     {
       name: "ankara",
       images: [
-        "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754313/African_Suit_for_Men_Ankara_Print_Jacket_Coat_and_Pants_2_Pieces_Set_Dshiki_Men_s_Formal_Outfits_owiqpi.png",
+        "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754494/Pin_by_Edmond_on_Mes_enregistrements_in_2022_tl4zlx.png",
         "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1734594463/Dresses_For_Women___Fashion_Dress_Online_d9ipvj.png",
         "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754493/African_Men_Clothing_Kaftan_African_Men_Shirt_and_Dashiki_Mens_Shirt_Casual_wear__oqeslr.png",
         "https://res.cloudinary.com/dv7vjs0s0/image/upload/v1735754493/Cop_These_8_Fabulous_Ankara_Styles_For_Men_A_Million_Styles_k5rval.png",
@@ -63,7 +63,7 @@ const AnkaraCollection = () => {
     <div className="p-4 flex custom-grid max-h-[60vh] overflow-y-scroll">
       {data.images.map((image, index) => {
         return (
-          <div key={index} className="bg-yellow-900 w-[10em] h-[10em] ">
+          <div key={index} className="bg-yellow-900 min-w-[10em] min-h-[10em] w-full">
             <Image
               alt="cloth style image"
               width={500}
