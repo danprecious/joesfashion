@@ -34,7 +34,7 @@ export const GetAnAttireForm = () => {
 
     console.log(data);
 
-    emailjs.send("service_g7nmn5w", "template_54ons0l", templateParams, "pF3XQJqfU7wKqvKOl").then(
+    emailjs.send("service_bx8lzy6", "template_75aj9mt", templateParams, "rZ2RnV71cEvNT-Cj3").then(
       (res) => {
         console.log("Email sent successfully", res);
         setSuccess("We've received your message and will respond in your inbox shortly")
