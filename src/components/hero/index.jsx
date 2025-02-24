@@ -1,8 +1,7 @@
 "use client";
 import localFont from "next/font/local";
 import images from '../../utils/images.json';
-import Image from "next/image";
-import AnimateWrapper from './AnimateWrapper'; // Import the AnimateWrapper
+
 import ImageCard from "./imageCard";
 import {motion} from 'framer-motion'
 
